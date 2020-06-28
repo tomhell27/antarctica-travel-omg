@@ -1,0 +1,38 @@
+.advantages {
+    background-image: url(../img/pale-mountains-desk.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: $color-back-blue;
+}
+
+.advantages__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+}
+
+.advantages__head {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.advantages__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.advantages__list {
+    display: flex;
+    padding: 0; 
+    justify-content: space-around;
+}
+
+.advantages__item {
+   max-width: 350px;
+    height: 241px;
+    background-color: $color-font--main;
+}

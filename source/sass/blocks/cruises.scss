@@ -1,0 +1,33 @@
+.cruises__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cruises__item {
+    max-width: 260px;
+    position: relative;
+    background-color: $color-mobile--menu;
+    color: $color-font--main;
+    transition: all ease 0.7s;
+}
+
+.cruises__picture {
+    position: relative;
+    z-index: 2;
+}
+
+.cruises__item:hover .cruises__picture {
+    opacity: 0;
+    z-index: -1;
+}
+
+.cruises__head--close {
+    position: absolute;
+    bottom: 0;
+}
+
+.cruises__description {
+    position: absolute;
+    top: 0;
+}

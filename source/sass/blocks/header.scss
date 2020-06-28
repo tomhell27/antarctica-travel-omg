@@ -1,8 +1,9 @@
 .header__nav-container {
     width: 100%;
     min-height: 650px;
-    background: url(../img/main-photo-desk.png) no-repeat;
+    background: url(../img/main-photo-desk.png) no-repeat; 
     background-size: cover;
+    background-position: center;    
     background-color: $color-back;
     color: $color-font--main;
 
@@ -16,6 +17,7 @@
 }
 
 .header__button {
+    display: none;
     width: 24px;
     height: 12px;
     border: none;
@@ -24,6 +26,7 @@
 }
 
 .header__button--close {
+    display: none;
     background: url(../img/close.svg) no-repeat;
 }
 
@@ -42,12 +45,14 @@
 }
 
 .header__menu {
-    display: flex;
-    width: 550px;
+    display: flex; 
     justify-content: space-between;
+    max-width: 630px;
+    white-space: nowrap;
 }
 
 .header__item {
+    margin-right: 34px;
     list-style: none;
     font-weight: 500;
     font-size: 16px;
@@ -82,11 +87,20 @@
 
 @media (max-width: $tablet-width) {
     .header__nav-container {
-        background: url(../img/main-photo-tablet.png) no-repeat;
-
+        background-image: url(../img/main-photo-tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;    
+        background-color: $color-back;
+     
         @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
             background: url(../img/main-photo-tablet-2x.png) no-repeat;
         }
+    }
+
+    .header__logo {
+        width: 38px;
+        height: 20px;
     }
 
     .header__item {
@@ -109,6 +123,8 @@
     .header__nav-container {
         background: url(../img/main-photo-mobile.png) no-repeat;
         background-size: cover;
+        background-position: center;    
+        background-color: $color-back;
         height: auto;
         position: relative;
 

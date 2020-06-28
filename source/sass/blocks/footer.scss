@@ -1,3 +1,23 @@
 .footer {
     background-color: $color-mobile--menu;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
 }
+
+.footer__menu {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__a {
+    color: $color-font--main;
+}
+

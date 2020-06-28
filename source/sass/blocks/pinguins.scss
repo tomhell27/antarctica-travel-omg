@@ -1,0 +1,21 @@
+.pinguins {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 77px;
+}
+
+.pinguins__title {
+    max-width: 430px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 16px;    
+}
+
+.pinguins__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+
