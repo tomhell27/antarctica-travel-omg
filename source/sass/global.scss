@@ -1,3 +1,13 @@
-* {
-    font-family: $font-montserrat;
+body {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #011C40;
+    background-color: $color-font--main;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
