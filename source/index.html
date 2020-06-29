@@ -14,32 +14,7 @@
     <header class="header">
         <nav class="header__nav--nojs">
             <!--logo-->
-            <svg class="header__logo" id="logo" width="70" height="38" viewBox="0 0 70 38" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"
-                    fill="#F9FBFD" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"
-                    fill="#F9FBFD" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"
-                    fill="#F9FBFD" />
-            </svg>
-
-
-            <svg class="header__logo--mobile" id="logo-mobile" width="42" height="22" viewBox="0 0 70 38" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"
-                    fill="#011C40" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"
-                    fill="#011C40" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"
-                    fill="#011C40" />
-            </svg>
+            <img src="img/logo-mobile.svg" alt="Логотип Круизы в Антарктику">
 
             <ul class="header__menu menu">
                 <li class="header__item">
@@ -61,10 +36,9 @@
                 <button class="header__button"></button>
                 <!--logo-->
                 <picture>
-                    <source media="(max-width: 1023px)" srcset="img/icon-logo-tablet.svg">
-                    <source media="(max-width: 767px)" srcset="img/icon-logo-mobile-light.svg">
-                    <img class="header__logo" src="img/icon-logo.svg" width="70" height="38"
-                        alt="Логотип Круизы по Антарктике">
+                    <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+                    <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
+                    <img class="header__logo" src="img/logo-desktop.svg" alt="Логотип Круизы по Антарктике">
                 </picture>
 
                 <ul class="header__menu menu">
@@ -90,28 +64,34 @@
     </header>
     <main>
         <section class="pinguins">
-            <div class="pinguins__container">
-                <h2 class="pinguins__title">Путешествие на край Земли</h2>
-                <p class="pinguins__description">
-                    Это волшебное путешествие поможет вам познакомиться поближе с
-                    удивительным миром Антарктики.
-                    Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть:
-                    ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.
-                </p>
+            <div class="container pinguins__wrap">
+                <div class="pinguins__container">
+                    <h2 class="pinguins__title">Путешествие на край Земли</h2>
+                    <p class="pinguins__description">
+                        Это волшебное путешествие поможет вам познакомиться поближе с
+                        удивительным миром Антарктики.
+                        <span class="pinguins__span">
+                            Наш круизный лайнер отвезет вас на край Земли, где вы сможете
+                            увидеть:
+                            ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.
+                        </span>
+                    </p>
+                </div>
+                <picture>
+
+                    <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/pinguin-mobile.webp, img/pinguin-mobile-2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)"
+                        srcset="img/pinguin-tablet.webp, img/pinguin-tablet-2x.webp 2x">
+                    <source type="image/webp" srcset="img/pinguin-desk.webp, img/pinguin-desk-2x.webp 2x">
+
+
+                    <source media="(max-width: 767px)" srcset="img/pinguin-mobile.png, img/pinguin-mobile-2x.png 2x">
+                    <source media="(max-width: 1023px)" srcset="img/pinguin-tablet.png, img/pinguin-tablet-2x.png 2x">
+                    <img class="pinguin__img" src="img/pinguin-desk.png" srcset="img/pinguin-desk-2x.png 2x"
+                        alt="Три пингвина на снегу">
+                </picture>
             </div>
-            <picture>
-                <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="img/pinguin-tablet.webp, pinguin-tablet-2x.webp 2x">
-                <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/pinguin-mobile.webp, img/pinguin-mobile-2x.webp 2x">
-                <source type="image/webp" srcset="img/pinguin-desk.webp, img/pinguin-desk-2x.webp 2x">
-
-                <source media="(max-width: 1023px)" srcset="img/pinguin-tablet.png, img/pinguin-tablet-2x.png 2x">
-                <source media="(max-width: 767px)" srcset="img/pinguin-mobile.png, img/pinguin-mobile-2x.png 2x">
-                <img class="example__img" src="img/pinguin-desk.png" srcset="img/pinguin-desk-2x.png 2x"
-                    alt="Три пингвина на снегу">
-            </picture>
-
         </section>
         <section class="advantages" id="goods">
             <h2 class="advantages__title">Преимущества</h2>
@@ -173,7 +153,24 @@
                 <!--Круиз "Астория"-->
                 <li class="cruises__item">
                     <div class="cruises__picture">
-                        <img src="img/astoria-desk.png" alt="Круиз Астория" class="cruises__img">
+
+                        <picture>
+                            <source type="image/webp" media="(max-width: 767px)"
+                                srcset="img/astoria-mobile.webp, img/astoria-mobile-2x.webp 2x">
+                            <source type="image/webp" media="(max-width: 1023px)"
+                                srcset="img/astoria-tablet.webp, img/astoria-tablet-2x.webp 2x">
+                            <source type="image/webp" srcset="img/astoria-desk.webp, img/astoria-desk-2x.webp 2x">
+
+                            <source media="(max-width: 767px)"
+                                srcset="img/astoria-mobile.png, img/astoria-mobile-2x.png 2x">
+                            <source media="(max-width: 1023px)"
+                                srcset="img/astoria-tablet.png, img/astoria-tablet-2x.png 2x">
+
+                            <img src="img/astoria-desk.png" srcset="1mg/astoria-desk-2x.png 2x" alt="Круиз Астория"
+                                class="cruises__img">
+                        </picture>
+
+
                         <h3 class="cruises__head cruises__head--close">Круиз "Астория"</h3>
                     </div>
                     <div class="cruises__description">
@@ -197,7 +194,25 @@
                 <!--Круиз “Элайн”-->
                 <li class="cruises__item">
                     <div class="cruises__picture">
-                        <img src="img/minion-desk.png" alt="Круиз “Элайн”" class="cruises__img">
+
+                        <picture>
+
+                            <source type="image/webp" media="(max-width: 767px)"
+                                srcset="img/minion-mobile.webp, img/minion-mobile-2x.webp 2x">
+                            <source type="image/webp" media="(max-width: 1023px)"
+                                srcset="img/minion-tablet.webp, img/minion-tablet-2x.webp 2x">
+                            <source type="image/webp" srcset="img/minion-desk.webp, img/minion-desk-2x.webp 2x">
+
+
+                            <source media="(max-width: 767px)"
+                                srcset="img/minion-mobile.png, img/minion-mobile-2x.png 2x">
+                            <source media="(max-width: 1023px)"
+                                srcset="img/minion-tablet.png, img/minion-tablet-2x.png 2x">
+                            <img src="img/minion-desk.png" srcset="img/minion-desk-2x.png 2x" alt="Круиз “Элайн”"
+                                class="cruises__img">
+                        </picture>
+
+
                         <h3 class="cruises__head cruises__head--close">Круиз “Элайн”</h3>
                     </div>
                     <div class="cruises__description">
@@ -221,7 +236,25 @@
                 <!--Круиз "Атлантис"-->
                 <li class="cruises__item">
                     <div class="cruises__picture">
-                        <img src="img/athlantic-desk.png" alt="Круиз Атлантис" class="cruises__img">
+
+                        <picture>
+
+                            <source type="image/webp" media="(max-width: 767px)"
+                                srcset="img/athlantic-mobile.webp, img/athlantic-mobile-2x.webp 2x">
+                            <source type="image/webp" media="(max-width: 1023px)"
+                                srcset="img/athlantic-tablet.webp, img/athlantic-tablet-2x.webp 2x">
+                            <source type="image/webp" srcset="img/athlantic-desk.webp, img/athlantic-desk-2x.webp 2x">
+
+
+                            <source media="(max-width: 767px)"
+                                srcset="img/athlantic-mobile.png, img/athlantic-mobile-2x.png 2x">
+                            <source media="(max-width: 1023px)"
+                                srcset="img/athlantic-tablet.png, img/athlantic-tablet-2x.png 2x">
+                            <img src="img/athlantic-desk.png" srcset="img/athlantic-desk-2x.png 2x" alt="Круиз Атлантис"
+                                class="cruises__img">
+                        </picture>
+
+
                         <h3 class="cruises__head cruises__head--close">Круиз "Атлантис"</h3>
                     </div>
                     <div class="cruises__description">
@@ -245,7 +278,24 @@
                 <!--Круиз "Одиссей"-->
                 <li class="cruises__item">
                     <div class="cruises__picture">
-                        <img src="img/odissey-desk.png" alt="Круиз Одиссей" class="cruises__img">
+
+                        <picture>
+
+                            <source type="image/webp" media="(max-width: 767px)"
+                                srcset="img/odissey-mobile.webp, img/odissey-mobile-2x.webp 2x">
+                            <source type="image/webp" media="(max-width: 1023px)"
+                                srcset="img/odissey-tablet.webp, img/odissey-tablet-2x.webp 2x">
+                            <source type="image/webp" srcset="img/odissey-desk.webp, img/odissey-desk-2x.webp 2x">
+
+
+                            <source media="(max-width: 767px)"
+                                srcset="img/odissey-mobile.png, img/odissey-mobile-2x.png 2x">
+                            <source media="(max-width: 1023px)"
+                                srcset="img/odissey-tablet.png, img/odissey-tablet-2x.png 2x">
+                            <img src="img/odissey-desk.png" srcset="img/odissey-desk-2x.png 2x" alt="Круиз Одиссей"
+                                class="cruises__img">
+                        </picture>
+
                         <h3 class="cruises__head cruises__head--close">Круиз "Одиссей"</h3>
                     </div>
                     <div class="cruises__description">
@@ -269,7 +319,24 @@
                 <!--Круиз "Олимпия"-->
                 <li class="cruises__item">
                     <div class="cruises__picture">
-                        <img src="img/olimpia-desk.png" alt="Круиз Олимпия" class="cruises__img">
+
+                        <picture>
+
+                            <source type="image/webp" media="(max-width: 767px)"
+                                srcset="img/olimpia-mobile.webp, img/olimpia-mobile-2x.webp 2x">
+                            <source type="image/webp" media="(max-width: 1023px)"
+                                srcset="img/olimpia-tablet.webp, img/olimpia-tablet-2x.webp 2x">
+                            <source type="image/webp" srcset="img/olimpia-desk.webp, img/olimpia-desk-2x.webp 2x">
+
+
+                            <source media="(max-width: 767px)"
+                                srcset="img/olimpia-mobile.png, img/olimpia-mobile-2x.png 2x">
+                            <source media="(max-width: 1023px)"
+                                srcset="img/olimpia-tablet.png, img/olimpia-tablet-2x.png 2x">
+                            <img src="img/olimpia-desk.png" srcset="img/olimpia-desk-2x.png 2x" alt="Круиз Олимпия"
+                                class="cruises__img">
+                        </picture>
+
                         <h3 class="cruises__head cruises__head--close">Круиз "Олимпия"</h3>
                     </div>
                     <div class="cruises__description">
@@ -293,7 +360,24 @@
                 <!--Круиз "Аврора"-->
                 <li class="cruises__item">
                     <div class="cruises__picture">
-                        <img src="img/olimpia-desk.png" alt="Круиз Аврора" class="cruises__img">
+
+                        <picture>
+
+                            <source type="image/webp" media="(max-width: 767px)"
+                                srcset="img/avrora-mobile.webp, img/avrora-mobile-2x.webp 2x">
+                            <source type="image/webp" media="(max-width: 1023px)"
+                                srcset="img/avrora-tablet.webp, img/avrora-tablet-2x.webp 2x">
+                            <source type="image/webp" srcset="img/avrora-desk.webp, img/avrora-desk-2x.webp 2x">
+
+
+                            <source media="(max-width: 767px)"
+                                srcset="img/avrora-mobile.png, img/avrora-mobile-2x.png 2x">
+                            <source media="(max-width: 1023px)"
+                                srcset="img/avrora-tablet.png, img/avrora-tablet-2x.png 2x">
+                            <img src="img/avrora-desk.png" srcset="img/avrora-desk-2x.png 2x" alt="Круиз Аврора"
+                                class="cruises__img">
+                        </picture>
+
                         <h3 class="cruises__head cruises__head--close">Круиз "Аврора"</h3>
                     </div>
                     <div class="cruises__description">
@@ -317,7 +401,24 @@
                 <!--Круиз "Леонор"-->
                 <li class="cruises__item">
                     <div class="cruises__picture">
-                        <img src="img/leonor-desk.png" alt="Круиз Леонор" class="cruises__img">
+
+                        <picture>
+
+                            <source type="image/webp" media="(max-width: 767px)"
+                                srcset="img/leonor-mobile.webp, img/leonor-mobile-2x.webp 2x">
+                            <source type="image/webp" media="(max-width: 1023px)"
+                                srcset="img/leonor-tablet.webp, img/leonor-tablet-2x.webp 2x">
+                            <source type="image/webp" srcset="img/leonor-desk.webp, img/leonor-desk-2x.webp 2x">
+
+
+                            <source media="(max-width: 767px)"
+                                srcset="img/leonor-mobile.png, img/leonor-mobile-2x.png 2x">
+                            <source media="(max-width: 1023px)"
+                                srcset="img/leonor-tablet.png, img/leonor-tablet-2x.png 2x">
+                            <img src="img/leonor-desk.png" srcset="img/leonor-desk-2x.png 2x" alt="Круиз Леонор"
+                                class="cruises__img">
+                        </picture>
+
                         <h3 class="cruises__head cruises__head--close">Круиз "Леонор"</h3>
                     </div>
                     <div class="cruises__description">
@@ -341,7 +442,22 @@
                 <!--Круиз "Минион - 1"-->
                 <li class="cruises__item">
                     <div class="cruises__picture">
-                        <img src="img/minion-desk.png" alt="Круиз Минион - 1" class="cruises__img">
+                        <picture>
+
+                            <source type="image/webp" media="(max-width: 767px)"
+                                srcset="img/minion-mobile.webp, img/minion-mobile-2x.webp 2x">
+                            <source type="image/webp" media="(max-width: 1023px)"
+                                srcset="img/minion-tablet.webp, img/minion-tablet-2x.webp 2x">
+                            <source type="image/webp" srcset="img/minion-desk.webp, img/minion-desk-2x.webp 2x">
+
+
+                            <source media="(max-width: 767px)"
+                                srcset="img/minion-mobile.png, img/minion-mobile-2x.png 2x">
+                            <source media="(max-width: 1023px)"
+                                srcset="img/minion-tablet.png, img/minion-tablet-2x.png 2x">
+                            <img src="img/minion-desk.png" srcset="img/minion-desk-2x.png 2x" alt="Круиз “Элайн”"
+                                class="cruises__img">
+                        </picture>
                         <h3 class="cruises__head cruises__head--close">Круиз "Минион - 1"</h3>
                     </div>
                     <div class="cruises__description">
@@ -374,7 +490,7 @@
             </div>
             <form action="https://echo.htmlacademy.ru" method="post" class="reservation__form">
                 <fieldset class="reservation__fieldset">
-                    <legend >Оставьте заявку и мы свяжемся с вами в ближайшее время</legend>
+                    <legend>Оставьте заявку и мы свяжемся с вами в ближайшее время</legend>
                     <input type="text">
                     <input type="tel">
                     <input type="email">
@@ -386,7 +502,22 @@
         </section>
         <section class="contacts" id="contacts">
             <h2 class="visually-hidden">Контакты</h2>
-            <img src="img/map-desk.png" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
+
+            <picture>
+
+                <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/map-mobile.webp, img/map-mobile-2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/map-tablet.webp, img/map-tablet-2x.webp 2x">
+                <source type="image/webp" srcset="img/map-desk.webp, img/map-desk-2x.webp 2x">
+
+
+                <source media="(max-width: 767px)" srcset="img/map-mobile.png, img/map-mobile-2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/map-tablet.png, img/map-tablet-2x.png 2x">
+                <img src="img/map-desk.png" srcset="img/map-desk-2x.png 2x"
+                    alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
+            </picture>
+
             <div>
                 <p>
                     У вас ещё остались вопросы или сомнения?
@@ -417,19 +548,11 @@
     </main>
     <footer class="footer">
         <nav class="footer__nav">
-            <svg class="footer__logo" width="70" height="38" viewBox="0 0 70 38" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"
-                    fill="#f9fbfd" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"
-                    fill="#f9fbfd" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"
-                    fill="#f9fbfd" />
-            </svg>
-            <!--logo-->
+            <picture>
+                <source media="(max-width: 767px)" srcset="img/logo-mobile-light.svg">
+                <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
+                <img class="header__logo" src="img/logo-desktop.svg" alt="Логотип Круизы по Антарктике">
+            </picture>
             <ul class="footer__menu">
                 <li class="footer__item">
                     <a class="footer__a" href="#goods">Преимущества </a>

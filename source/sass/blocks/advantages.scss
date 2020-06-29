@@ -3,6 +3,10 @@
     background-size: cover;
     background-position: center;
     background-color: $color-back-blue;
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+        background: url(../img/pale-mountains-desk-2x.jpg) no-repeat;
+    }
 }
 
 .advantages__title {
@@ -35,4 +39,30 @@
    max-width: 350px;
     height: 241px;
     background-color: $color-font--main;
+}
+
+@media (max-width: $tablet-width) {
+    .advantages {
+        background-image: url(../img/pale-mountains-tablet.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: $color-back-blue;
+    
+        @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+            background: url(../img/pale-mountains-tablet-2x.jpg) no-repeat;
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .advantages {
+        background-image: url(../img/pale-mountains-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: $color-back-blue;
+    
+        @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+            background: url(../img/pale-mountains-mobile-2x.jpg) no-repeat;
+        }
+    }
 }

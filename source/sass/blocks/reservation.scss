@@ -4,4 +4,41 @@
     background-size: cover;
     background-position: center;
     display: flex;
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+        background: url(../img/last-photo-desk-2x.jpg) no-repeat;
+    }
+}
+
+.reservation__form {
+    background-color: $color-mobile--menu;
+    color: $color-font--main;
+}
+
+@media (max-width: $tablet-width) {
+    .reservation {
+        background-image: url(../img/last-photo-tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+    
+        @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+            background: url(../img/last-photo-tablet-2x.jpg) no-repeat;
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .reservation {
+        background-image: url(../img/last-photo-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+    
+        @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+            background: url(../img/last-photo-mobile-2x.jpg) no-repeat;
+        }
+    }
 }

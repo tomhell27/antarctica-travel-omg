@@ -21,3 +21,30 @@
     color: $color-font--main;
 }
 
+@media (max-width: $mobile-width) {
+    .footer {
+        flex-direction: column;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .footer__menu {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .footer__item {
+        margin-bottom: 23px;
+    }
+
+    .footer__a {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .footer__nav {
+        flex-direction: column;
+    }
+}
+

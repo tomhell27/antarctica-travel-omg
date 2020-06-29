@@ -1,7 +1,16 @@
 .pinguins {
-    display: flex;
     padding-top: 100px;
     padding-bottom: 77px;
+}
+
+.pinguins__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.pinguins__container {
+    width: 515px;
 }
 
 .pinguins__title {
@@ -9,13 +18,54 @@
     font-size: 26px;
     font-weight: 600;
     line-height: 1.4;
+    margin-top: 0;
     margin-bottom: 16px;    
 }
 
 .pinguins__description {
+    margin-top: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
+}
+
+@media (max-width: $tablet-width) {
+    .pinguins__container {
+        width: 325px;
+    }
+
+    .pinguins__title {
+        width: 209px;
+    }
+
+    .pinguins__span {
+        display: block;
+        width: 300px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .pinguins__container {
+        width: 290px;
+    }
+
+    .pinguins__title {
+        font-size: 24px;
+    }
+
+    .pinguins__wrap {
+        width: 300px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pinguins__description {
+        margin-bottom: 30px;
+    }
+
+    .pinguins__span {
+        width: 300px;
+    }
 }
 

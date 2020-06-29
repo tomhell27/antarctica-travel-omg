@@ -7,3 +7,10 @@
 .social__icon {
     display: block;
 }
+
+@media (max-width: $mobile-width) {
+    .social {
+        margin: 0;
+        padding: 0;
+    }
+}
