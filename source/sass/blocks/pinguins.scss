@@ -1,6 +1,6 @@
 .pinguins {
     padding-top: 120px;
-    padding-bottom: 77px;
+    padding-bottom: 120px;
 }
 
 .pinguins__wrap {
@@ -16,8 +16,8 @@
 
 .pinguins__title {
     font-size: 28px;
-font-weight: 600;
-line-height: 150%;
+    font-weight: 600;
+    line-height: 150%;
 }
 
 .pinguins__description {
@@ -31,6 +31,7 @@ line-height: 150%;
 @media (max-width: $tablet-width) {
     .pinguins {
         padding-top: 90px;
+        padding-bottom: 70px;
     }
     .pinguins__container {
         width: 325px;
@@ -59,6 +60,7 @@ line-height: 150%;
 @media (max-width: $mobile-width) {
     .pinguins {
         padding-top: 55px;
+        padding-bottom: 65px;
     }
 
     .pinguins__container {

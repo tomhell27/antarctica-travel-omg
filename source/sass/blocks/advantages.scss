@@ -1,6 +1,6 @@
 .advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 90px;
+    padding-bottom: 105px;
     background-image: url(../img/pale-mountains-desk.jpg);
     background-size: cover;
     background-position: center;
@@ -17,7 +17,7 @@
 }
 
 .advantages__title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -26,12 +26,14 @@
 }
 
 .advantages__head {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
 }
 
 .advantages__description {
+    margin-top: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -39,6 +41,7 @@
 }
 
 .advantages__list {
+    margin-top: 0;
     display: flex;
     padding: 0; 
     justify-content: space-between;
@@ -46,40 +49,47 @@
 
 .advantages__item {
     position: relative;
-    max-width: 350px;
-    height: 241px;
+    max-width: 300px;
     padding-left: 30px;
-    padding-top: 87px;
+    padding-top: 63px;
     background-color: $color-font--main;
+    padding-right: 30px;
+    padding-bottom: 15px;
 }
 
 .advantages__item::before {
     content: "";
     position: absolute;
-    top: 30px;
+    background-size: cover;
+    background-position: center;
     left: 30px;
 }
 
 .advantages__item--liner::before {
     width: 27px;
     height: 32px;
+    top: 30px;
     background-image: url(../img/icon-liner.svg);
 }
 
 .advantages__item--allincluse::before {
     width: 38px;
     height: 21px;
+    top: 32px;   
     background-image: url(../img/icon-allinclusive.svg);
 }
 
 .advantages__item--zodiac::before {
     width: 42px;
     height: 15px;
+    top: 37px;
     background-image: url(../img/icon-zodiac.svg);
 }
 
 @media (max-width: $tablet-width) {
     .advantages {
+        padding-top: 70px;
+        padding-bottom: 90px;
         background-image: url(../img/pale-mountains-tablet.jpg);
         background-size: cover;
         background-position: center;
@@ -89,10 +99,65 @@
             background: url(../img/pale-mountains-tablet-2x.jpg) no-repeat;
         }
     }
+
+    .advantages__wrap {
+        max-width: 680px;
+    }
+
+    .advantages__title {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 150%;
+    }
+
+    .advantages__head:nth-child(2) {
+        width: 133px;
+    }
+
+    .advantages__item {
+        width: 186px;
+        padding: 0;
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+
+    .advantages__item--liner::before {
+        width: 21px;
+        height: 26px;
+        top: 30px;
+        left: 20px;
+        background-image: url(../img/icon-liner.svg);
+    }
+    
+    .advantages__item--allincluse::before {
+        width: 33px;
+        height: 19px;
+        top: 28px;
+        left: 20px;
+        background-image: url(../img/icon-allinclusive.svg);
+    }
+    
+    .advantages__item--zodiac::before {
+        width: 38px;
+        height: 13px;
+        top: 25px;
+        left: 20px;
+        background-image: url(../img/icon-zodiac.svg);
+    }
+
+    .advantages__description {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        padding-right: 17px;
+    }
+    
 }
 
 @media (max-width: $mobile-width) {
     .advantages {
+        padding-top: 32px;
+        padding-bottom: 15px;
         background-image: url(../img/pale-mountains-mobile.jpg);
         background-size: cover;
         background-position: center;
@@ -101,5 +166,42 @@
         @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
             background: url(../img/pale-mountains-mobile-2x.jpg) no-repeat;
         }
+    }
+
+    .advantages__wrap {
+        max-width: 290px;
+    }
+
+    .advantages__item {
+        width: 255px;
+        margin-bottom: 30px;
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-top: 54px;
+        padding-bottom: 5px;
+    }
+
+    .advantages__head {
+        max-width: 170px;
+        font-size: 18px;
+    }
+
+    .advantages__head:nth-child(2) {
+        width: 170px;
+    }
+
+
+    .advantages__title {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .advantages__list {
+        flex-direction: column;
+    }
+
+    .advantages__description {
+        padding: 0;
     }
 }
