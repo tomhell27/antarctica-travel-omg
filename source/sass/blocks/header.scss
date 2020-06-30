@@ -33,6 +33,7 @@
 .header__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: auto;
     margin-left: 103px;
     margin-right: 103px;
@@ -47,7 +48,7 @@
 .header__menu {
     display: flex; 
     justify-content: space-between;
-    max-width: 630px;
+    max-width: 590px;
     white-space: nowrap;
 }
 

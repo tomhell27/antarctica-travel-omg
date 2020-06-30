@@ -1,3 +1,40 @@
 .contacts {
     display: flex;
+    background-image: url(../img/map-desk.png) no-repeat;
+    background-size: cover;
+    background-position: center; 
+    
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+        background: url(../img/map-desk-2x.png) no-repeat;
+    }
+}
+
+.contacts__map {
+    width: 560px;
+    height: 300px;
+    margin-right: 100px;
+}
+
+@media (max-width: $tablet-width) {
+    .contacts {
+    background-image: url(../img/map-tablet.png) no-repeat;
+    background-size: cover;
+    background-position: center; 
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+        background: url(../img/map-tablet-2x.png) no-repeat;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .contacts {
+    background-image: url(../img/map-mobile.png) no-repeat;
+    background-size: cover;
+    background-position: center; 
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+        background: url(../img/map-mobile-2x.png) no-repeat;
+        }
+    }
 }

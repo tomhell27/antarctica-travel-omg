@@ -1,4 +1,6 @@
 .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-image: url(../img/pale-mountains-desk.jpg);
     background-size: cover;
     background-position: center;
@@ -9,11 +11,18 @@
     }
 }
 
+.advantages__wrap {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
 .advantages__title {
+    margin-bottom: 60px;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
+    text-align: center;
 }
 
 .advantages__head {
@@ -32,13 +41,41 @@
 .advantages__list {
     display: flex;
     padding: 0; 
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .advantages__item {
-   max-width: 350px;
+    position: relative;
+    max-width: 350px;
     height: 241px;
+    padding-left: 30px;
+    padding-top: 87px;
     background-color: $color-font--main;
+}
+
+.advantages__item::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.advantages__item--liner::before {
+    width: 27px;
+    height: 32px;
+    background-image: url(../img/icon-liner.svg);
+}
+
+.advantages__item--allincluse::before {
+    width: 38px;
+    height: 21px;
+    background-image: url(../img/icon-allinclusive.svg);
+}
+
+.advantages__item--zodiac::before {
+    width: 42px;
+    height: 15px;
+    background-image: url(../img/icon-zodiac.svg);
 }
 
 @media (max-width: $tablet-width) {

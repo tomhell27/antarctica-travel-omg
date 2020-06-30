@@ -1,5 +1,5 @@
 .pinguins {
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 77px;
 }
 
@@ -11,15 +11,13 @@
 
 .pinguins__container {
     width: 515px;
+    padding-top: 40px;
 }
 
 .pinguins__title {
-    max-width: 430px;
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 1.4;
-    margin-top: 0;
-    margin-bottom: 16px;    
+    font-size: 28px;
+font-weight: 600;
+line-height: 150%;
 }
 
 .pinguins__description {
@@ -31,21 +29,38 @@
 }
 
 @media (max-width: $tablet-width) {
+    .pinguins {
+        padding-top: 90px;
+    }
     .pinguins__container {
         width: 325px;
+        padding-top: 0;
     }
 
     .pinguins__title {
         width: 209px;
+        margin-top: 0;
+        padding-top: 0;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 140%;
     }
 
     .pinguins__span {
         display: block;
         width: 300px;
     }
+
+    .pinguins__img {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: $mobile-width) {
+    .pinguins {
+        padding-top: 55px;
+    }
+
     .pinguins__container {
         width: 290px;
     }
