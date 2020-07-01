@@ -17,6 +17,7 @@
 }
 
 .advantages__title {
+    margin-top: 15px;
     margin-bottom: 50px;
     font-style: normal;
     font-weight: 600;
@@ -88,7 +89,7 @@
 
 @media (max-width: $tablet-width) {
     .advantages {
-        padding-top: 70px;
+        padding-top: 80px;
         padding-bottom: 90px;
         background-image: url(../img/pale-mountains-tablet.jpg);
         background-size: cover;
