@@ -18,6 +18,11 @@ a[href]:hover {
     transition: all ease 0.5s;
 }
 
+button:hover {
+    opacity: 0.5;
+    transition: all ease 0.5s;
+}
+
 li {
     list-style: none;
 }

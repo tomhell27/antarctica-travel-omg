@@ -1,3 +1,7 @@
+.header__close {
+    display: none;
+}
+
 .header__nav-container {
     width: 100%;
     min-height: 650px;
@@ -12,6 +16,10 @@
     }
 }
 
+.header__combo {
+    display: none;
+}
+
 .header__br {
     display: none;
 }
@@ -20,25 +28,12 @@
     display: none;
 }
 
-.header__button {
-    display: none;
-    width: 24px;
-    height: 12px;
-    border: none;
-    background: url(../img/burger.svg);
-
-}
-
-.header__button--close {
-    display: none;
-    background: url(../img/close.svg) no-repeat;
-}
-
 .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: auto;
+    max-width: 1160px;
     margin: 0 auto;
     padding-top: 28px;
 }
@@ -146,10 +141,11 @@
 
 @media (max-width: $mobile-width) {
     .header__nav-container {
-        min-height: 380px;
-        padding-top: 121px;
+        min-height: 480px;
+        padding-top: 26px;
         background: url(../img/main-photo-mobile.png) no-repeat;
-        background-position: top;    
+        background-position: top; 
+        background-size: cover;
         background-color: $color-back;
         height: auto;
         position: relative;
@@ -159,41 +155,17 @@
         }
     }
 
-    .header__br {
-        display: inline;
-    }
-
-    .header__logo--mobile {
-        display: block;
-        padding-left: 15px;
-    }
-
-    .header__nav {
-        display: none;
-        position: absolute;
-        padding-top: 20px;
-        padding-left: 15px;
-        z-index: 6;
-        flex-direction: column;
-        justify-content: stretch;
-        width: 320px;
-        height: 299px;
+    .header__combo {
+        width: 280px;
         margin: 0 auto;
-        background-color: $color-font--main;
-    }
-
-    .header__nav-nojs {
         display: flex;
-        padding-top: 20px;
-        padding-left: 15px;
-        flex-direction: column;
-        width: 320px;
-        height: 299px;
-        margin: 0 auto;
-        background-color: $color-font--main;
+        justify-content: space-between;
     }
 
     .header__menu {
+        width: 258px;
+        margin-left: auto;
+        margin-right: auto;
         padding-left: 0;
         padding-top: 25px;
         flex-direction: column;
@@ -213,10 +185,10 @@
     }
 
     .header__entry {
-        width: 220px;
-        width: 285px;
+        width: auto;
+        max-width: 285px;
         margin: auto;
-        margin-top: 0;
+        margin-top: 70px;
         padding-top: 60px;
     }
 
@@ -234,7 +206,70 @@
         line-height: 140%;
     }
 
-    .header__close {
-        display: none;
+    .header__br {
+        display: inline;
+    }
+
+    /*Мобильное меню*/
+
+    .header__nav {
+       display: none;
+    }
+
+    /*Нет JS*/
+    .header__nav-nojs {
+        display: flex;
+        padding-top: 20px;
+        padding-left: 15px;
+        flex-direction: column;
+        width: 320px;
+        height: 299px;
+        margin: 0 auto;
+        background-color: $color-font--main;
+    }
+
+    /*Есть JS*/
+    .header__nav-isjs {
+        position: fixed;
+        z-index: 600;
+        overflow-y: hidden;
+        display: flex;
+        padding-top: 20px;
+        padding-left: 15px;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: $color-font--main;
+    }
+
+     /*Кнопка бургер*/
+    .header__button--open {
+        width: 24px;
+        height: 14px;
+        border: none;
+        background: url(../img/icon-burger.svg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /*Кнопка крестик*/
+    .header__button--close {
+        width: 24px;
+        height: 14px;
+        border: none;
+        background: url(../img/icon-close.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header__logo--mobile {
+        display: block;
+        padding-left: 15px;
+    }
+
+    .header__body-fix {
+        position: fixed;
+        overflow: hidden;
     }
 }

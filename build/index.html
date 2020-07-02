@@ -14,12 +14,15 @@
     <header class="header">
         <nav class="header__nav-nojs">
             <!--logo-->
-            <a href="#index">
-            <img src="img/logo-mobile.svg" alt="Логотип Круизы в Антарктику">
-
+            <div class="header__combo">
+                <a>
+                    <img src="img/logo-mobile.svg" alt="Логотип Круизы в Антарктику">
+                </a>
+                <button class="header__button header__button--close visually-hidden"></button>
+            </div>
             <ul class="header__menu menu">
                 <li class="header__item menu__item">
-                    <a class="header__a menu__a">Направления</a>
+                    <a href="#" class="header__a menu__a">Направления</a>
                 </li>
                 <li class="header__item">
                     <a href="#goods" class="header__a">Преимущества </a>
@@ -31,12 +34,18 @@
                     <a href="#contacts" class="header__a menu__a">Контакты</a>
                 </li>
             </ul>
-        </a>
         </nav>
         <div class="header__nav-container">
-            <nav class="header__nav">
-                <button class="header__button"></button>
+            <div class="header__combo">
+                <a>
+                    <img src="img/logo-mobile-light.svg" alt="Логотип Круизы в Антарктику">
+                </a>
+                <button class="header__button header__button--open visually-hidden"></button>
                 <!--logo-->
+
+            </div>
+
+            <nav class="header__nav">
                 <a href="#index">
                     <picture>
                         <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
@@ -49,7 +58,7 @@
                         <a href="#goods" class="header__a">Преимущества </a>
                     </li>
                     <li class="header__item menu__item">
-                        <a class="header__a menu__a">Направления</a>
+                        <a href="#" class="header__a menu__a">Направления</a>
                     </li>
                     <li class="header__item menu__item">
                         <a href="#cruises" class="header__a menu__a">Ближайшие круизы</a>
@@ -454,26 +463,26 @@
         <section class="contacts" id="contacts">
             <h2 class="visually-hidden">Контакты</h2>
             <div class="contacts__wrap">
-            <div class="contacts__map-wrap">
-                <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6042891313002!2d30.320833972022214!3d59.93870815455035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593620837492!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <div class="contacts__map-wrap">
+                    <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6042891313002!2d30.320833972022214!3d59.93870815455035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593620837492!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="contacts__data">
+                    <p class="contacts__go">
+                        У вас ещё остались вопросы или сомнения?
+                        Приезжайте к нам в офис и мы вам все расскажем.
+                    </p>
+                    <!--Иконка-->
+                    <p class="contacts__adress">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
+                    <!--Иконка-->
+                    <p class="contacts__phone">8-800-200-00-00</p>
+                </div>
             </div>
-            <div class="contacts__data">
-                <p class="contacts__go">
-                    У вас ещё остались вопросы или сомнения?
-                    Приезжайте к нам в офис и мы вам все расскажем.
-                </p>
-                <!--Иконка-->
-                <p class="contacts__adress">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
-                <!--Иконка-->
-                <p class="contacts__phone">8-800-200-00-00</p>
-            </div>
-        </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container footer__wrap">
             <nav class="footer__nav">
-                <a href="#">
+                <a href="#index">
                     <picture>
                         <source media="(max-width: 767px)" srcset="img/logo-mobile-light.svg">
                         <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
@@ -485,7 +494,7 @@
                         <a class="footer__a" href="#goods">Преимущества </a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__a">Направления</a>
+                        <a class="footer__a" href="#">Направления</a>
                     </li>
                     <li class="footer__item">
                         <a class="footer__a" href="#cruises">Ближайшие круизы</a>
@@ -521,6 +530,7 @@
             </ul>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
