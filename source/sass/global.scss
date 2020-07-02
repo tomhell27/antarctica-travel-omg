@@ -1,28 +1,41 @@
 body {
-    font-family: $font-montserrat;
-    color: #011C40;
-    background-color: $color-font--main;
+  font-family: $font-montserrat;
+  color: #011c40;
+  background-color: $color-font--main;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer
+  text-decoration: none;
+  cursor: pointer;
 }
 
 input {
-    cursor: pointer
+  cursor: pointer;
+}
+
+input:hover {
+  opacity: 0.5;
+  transition: all ease 0.5s;
+}
+
+input:focus {
+  opacity: 0.5;
+}
+
+button {
+  cursor: pointer;
 }
 
 a[href]:hover {
-    opacity: 0.5;
-    transition: all ease 0.5s;
+  opacity: 0.5;
+  transition: all ease 0.5s;
 }
 
 button:hover {
-    opacity: 0.5;
-    transition: all ease 0.5s;
+  opacity: 0.5;
+  transition: all ease 0.5s;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }

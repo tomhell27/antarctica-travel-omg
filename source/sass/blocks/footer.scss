@@ -1,77 +1,78 @@
 .footer {
-    background-color: $color-mobile--menu;
-    padding-top: 40px;
-    padding-bottom: 50px;
+  background-color: $color-mobile--menu;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .footer__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__menu {
-    width: 590px;
-    padding-left: 0;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
+  width: 590px;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
 }
 
 .footer__nav {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box; 
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .footer__a {
-    color: $color-font--main;
+  color: $color-font--main;
 }
 
 @media (max-width: $tablet-width) {
-    .footer {
-        padding-top: 30px;
-    }
+  .footer {
+    padding-top: 30px;
+  }
 
-    .footer__a {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-    }
+  .footer__a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
 
-    .footer__menu {
-        width: 445px;
-        margin-left: 20px;
-    }
+  .footer__menu {
+    width: 445px;
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: $mobile-width) {
-    .footer__wrap {
-        width: 290px;
-        flex-direction: column;
-        align-items: stretch;
-    }
+  .footer__wrap {
+    width: 290px;
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-    .footer__menu {
-        flex-direction: column;
-        padding-left: 0;
-        width: 280px;
-        margin-left: 0;
-    }
+  .footer__menu {
+    flex-direction: column;
+    padding-left: 0;
+    width: 280px;
+    margin-left: 0;
+  }
 
-    .footer__item {
-        margin-bottom: 23px;
-    }
+  .footer__item {
+    margin-bottom: 23px;
+  }
 
-    .footer__a {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-    }
-    
-    .footer__nav {
-        flex-direction: column;
-        align-items: stretch;
-    }
+  .footer__a {
+    width: 42px;
+    height: 22px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
-
