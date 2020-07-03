@@ -15,7 +15,7 @@
   display: none;
 }
 
-.reservation__title {
+.reservation h2 {
   margin-bottom: 8px;
   font-weight: bold;
   font-size: 40px;
@@ -24,7 +24,7 @@
 
 .reservation__wrap {
   display: flex;
-  max-width: calc(100% - 200px);
+  max-width: calc(100% - 326px);
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -81,7 +81,7 @@
   padding-top: 130px;
 }
 
-.reservation__p {
+.reservation p {
   width: 352px;
   margin-top: 0;
   font-weight: normal;
@@ -89,7 +89,7 @@
   line-height: 150%;
 }
 
-.reservation__form label[for="agree"]::before {
+.reservation__label::before {
   content: "";
   display: inline-block;
   position: relative;
@@ -99,7 +99,7 @@
   background-color: $color-font--main;
 }
 
-.reservation__form input[type="check"]:checked + .reservation__form label[for="agree"]::before {
+.reservation__check:checked + .reservation__label::before {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-size: 10px 6px;
@@ -142,7 +142,7 @@
     flex-direction: column;
   }
 
-  .reservation__title {
+  .reservation h2 {
     margin-top: 7px;
     margin-bottom: 5px;
     font-weight: bold;
@@ -150,7 +150,7 @@
     line-height: 150%;
   }
 
-  .reservation__p {
+  .reservation p {
     width: 100%;
     text-align: center;
   }
@@ -209,7 +209,8 @@
     width: 205px;
   }
 
-  .reservation__title {
+  .reservation h2 {
+    margin-top: 13px;
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 24px;
@@ -217,7 +218,7 @@
     text-align: center;
   }
 
-  .reservation__p {
+  .reservation p {
     font-weight: normal;
     font-size: 16px;
     line-height: 140%;
@@ -241,7 +242,7 @@
     margin-left: 10px;
   }
 
-  .reservation__form label[for="agree"]::before {
+  .reservation__label::before {
     bottom: 0;
   }
 }

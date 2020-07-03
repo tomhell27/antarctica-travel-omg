@@ -2,19 +2,20 @@
 
 var ESC_KEY = 'Escape';
 var ENTER_KEY = 'Enter';
+var header = document.querySelector('header');
 var nav = document.querySelector('nav');
-nav.classList.remove('header__nav-nojs');
 nav.classList.add('header__close');
+nav.classList.remove('header__nav-nojs');
 
-var buttons = document.querySelectorAll('.header__button');
+var buttons = header.querySelectorAll('.header__button');
 
 buttons.forEach(function (e) {
   e.classList.remove('visually-hidden');
 });
 
-var cross = document.querySelector('.header__button--close');
-var burger = document.querySelector('.header__button--open');
-var items = document.querySelectorAll('.header__a');
+var cross = header.querySelector('.header__button--close');
+var burger = header.querySelector('.header__button--open');
+var items = header.querySelectorAll('.header__a');
 
 var onMenuEscPress = function (evt) {
   if (evt.key === ESC_KEY) {
@@ -58,5 +59,8 @@ items.forEach(function (e) {
   e.addEventListener('click', function () {
     hideMenu();
   });
+});
 
+nav.addEventListener('click', function () {
+  hideMenu();
 });
