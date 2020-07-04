@@ -2,12 +2,13 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-image: url("../img/last-photo-desk.png");
+  background-color: $color-back--reservation;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-    background: url("../img/last-photo-desk-2x.jpg") no-repeat;
+    background-image: url("../img/last-photo-desk-2x.png");
   }
 }
 
@@ -55,8 +56,10 @@
 .reservation__form input {
   width: 278px;
   padding: 14px;
+  font-family: $font-montserrat;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
-  letter-spacing: 1.2px;
   max-height: 43px;
 }
 
@@ -124,15 +127,20 @@
 
 @media (max-width: $tablet-width) {
   .reservation {
-    padding-top: 85px;
+    padding-top: 80px;
     background-image: url("../img/last-photo-tablet.png");
+    background-color: $color-back--reservation;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-      background: url("../img/last-photo-tablet-2x.jpg") no-repeat;
+      background-image: url("../img/last-photo-tablet-2x.png");
+      background-color: $color-back--reservation;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
 
@@ -160,12 +168,13 @@
   }
 
   .reservation__form {
-    margin-top: 40px;
+    margin-top: 30px;
     align-self: center;
   }
 
   .reservation__form legend {
     margin-top: 40px;
+    margin-bottom: 24px;
   }
 }
 
@@ -174,13 +183,14 @@
     padding-top: 50px;
     padding-bottom: 30px;
     background-image: url("../img/last-photo-mobile.png");
+    background-color: $color-back--reservation;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-      background: url("../img/last-photo-mobile-2x.jpg") no-repeat;
+      background-image: url("../img/last-photo-mobile-2x.png");
     }
   }
 
@@ -206,12 +216,14 @@
   }
 
   .reservation__form input {
-    width: 205px;
+    width: 206px;
+    padding-bottom: 11px;
+    padding-left: 18px;
   }
 
   .reservation h2 {
-    margin-top: 13px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: bold;
     font-size: 24px;
     line-height: 130%;
@@ -231,18 +243,26 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   .reservation__form a {
     width: 162px;
+    margin-left: 15px;
   }
 
   .reservation__form button {
     width: 230px;
-    margin-left: 10px;
+    margin: 0 auto;
+    margin-top: 19px;
   }
 
   .reservation__label::before {
-    bottom: 0;
+    top: 5px;
+    left: 5px;
+  }
+
+  .reservation__form div {
+    margin-top: 5px;
   }
 }

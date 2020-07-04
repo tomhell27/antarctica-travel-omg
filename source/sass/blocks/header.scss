@@ -13,6 +13,9 @@
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background: url("../img/main-photo-desk-2x.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $color-back;
   }
 }
 
@@ -93,6 +96,9 @@
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
       background: url("../img/main-photo-tablet-2x.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: $color-back;
     }
   }
 
@@ -151,6 +157,9 @@
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
       background: url("../img/main-photo-mobile-2x.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: $color-back;
     }
   }
 

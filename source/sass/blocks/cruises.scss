@@ -33,6 +33,7 @@
 }
 
 .cruises__picture {
+  width: 260px;
   position: relative;
   z-index: 2;
 }
@@ -124,6 +125,10 @@
     width: 648px;
     margin-bottom: 70px;
   }
+
+  .cruises__picture {
+    width: 309px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -153,5 +158,9 @@
 
   .cruises__head--close {
     bottom: 0;
+  }
+
+  .cruises__picture {
+    width: 270px;
   }
 }

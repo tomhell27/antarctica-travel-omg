@@ -52,6 +52,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .footer {
+    padding-top: 40px;
+  }
+
   .footer__wrap {
     width: calc(100% - 40px);
     flex-direction: column;
