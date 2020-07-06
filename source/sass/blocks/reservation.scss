@@ -32,7 +32,7 @@
 
 .reservation__form {
   width: 405px;
-  height: 455px;
+  padding-top: 45px;
   background-color: $color-mobile--menu;
   color: $color-font--main;
 }
@@ -46,8 +46,7 @@
 }
 
 .reservation__form legend {
-  margin-top: 45px;
-  margin-bottom: 17px;
+  margin-bottom: 22px;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
@@ -55,6 +54,8 @@
 
 .reservation__form input {
   width: 278px;
+  margin-bottom: 15px;
+  border-radius: none;
   padding: 14px;
   font-family: $font-montserrat;
   font-style: normal;
@@ -65,7 +66,6 @@
 
 .reservation__form label {
   position: relative;
-  margin-bottom: 15px;
 }
 
 .reservation__form div {
@@ -112,7 +112,8 @@
 .reservation__form button {
   width: 303px;
   height: 43px;
-  margin-top: 5px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   box-sizing: border-box;
   background-color: $color-font--main;
   font-weight: 600;
@@ -127,7 +128,7 @@
 
 @media (max-width: $tablet-width) {
   .reservation {
-    padding-top: 80px;
+    padding-top: 85px;
     background-image: url("../img/last-photo-tablet.png");
     background-color: $color-back--reservation;
     background-repeat: no-repeat;
@@ -168,20 +169,24 @@
   }
 
   .reservation__form {
+    padding-top: 0;
     margin-top: 30px;
     align-self: center;
   }
 
   .reservation__form legend {
-    margin-top: 40px;
-    margin-bottom: 24px;
+    margin-top: 45px;
+  }
+
+  .reservation__form input {
+    margin-bottom: 15px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .reservation {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     background-image: url("../img/last-photo-mobile.png");
     background-color: $color-back--reservation;
     background-repeat: no-repeat;
@@ -208,6 +213,7 @@
 
   .reservation__form {
     width: 290px;
+    padding-top: 40px;
     margin-top: 15px;
   }
 
@@ -216,14 +222,16 @@
   }
 
   .reservation__form input {
-    width: 206px;
+    width: 215px;
+    padding-left: 15px;
+    margin-bottom: 16px;
     padding-bottom: 11px;
-    padding-left: 18px;
+    padding-right: 0;
   }
 
   .reservation h2 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-weight: bold;
     font-size: 24px;
     line-height: 130%;
@@ -242,7 +250,7 @@
     width: 214px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 20px;
   }
 
@@ -254,7 +262,8 @@
   .reservation__form button {
     width: 230px;
     margin: 0 auto;
-    margin-top: 19px;
+    margin-top: 23px;
+    margin-bottom: 40px;
   }
 
   .reservation__label::before {

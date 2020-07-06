@@ -50,6 +50,7 @@
         <li class="header__item menu__item">
           <a href="#contacts" class="header__a">Контакты</a>
         </li>
+
       </ul>
     </nav>
     <div class="header__nav-container">
@@ -494,30 +495,30 @@
             до даты выезда и сэкономьте до 50%
           </p>
         </div>
-        <form action="https://echo.htmlacademy.ru" method="post" class="reservation__form">
+        <form method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" autocomplete="off" class="reservation__form">
           <fieldset>
 
             <legend>Оставьте заявку <br class="reservation__br-mobile"> и мы свяжемся с вами в ближайшее время
             </legend>
             <label for="name" aria-label="Имя">
-              <input id="name" type="text" placeholder="Валерия">
+              <input id="name" type="text" name="имя" placeholder="Валерия" required>
             </label>
             <label for="tel" aria-label="телефон">
-              <input id="tel" type="tel" placeholder="89236889975">
+              <input id="tel" type="tel" name="телефон" placeholder="89236889975" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" minlength="11" maxlength="16" required>
             </label>
             <label for="mail" aria-label="электронная почта">
-              <input id="mail" type="email" placeholder="grishaewa.lera@gmail.com">
+              <input id="mail" type="email" name="почта" placeholder="grishaewa.lera@gmail.com" required>
             </label>
             <div>
 
-              <input class="reservation__check visually-hidden" type="checkbox" checked id="agree" aria-label="чекбокс">
+              <input class="reservation__check visually-hidden" name="согласен" type="checkbox" checked id="agree" aria-label="чекбокс" required>
               <label for="agree" class="reservation__label"></label>
 
               <a href="#">
                 Я согласен на обработку<br class="reservation__br-mobile"> моих персональных данных
               </a>
             </div>
-            <button type="submit">Оставить заявку</button>
+            <button type="submit" >Оставить заявку</button>
           </fieldset>
         </form>
       </div>
@@ -566,6 +567,7 @@
           <li class="footer__item">
             <a class="footer__a" href="#contacts">Контакты</a>
           </li>
+
         </ul>
       </nav>
       <ul class="social">

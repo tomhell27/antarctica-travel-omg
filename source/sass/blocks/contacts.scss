@@ -10,7 +10,8 @@
 }
 
 .contacts__wrap {
-  max-width: calc(100% - 206px);
+  width: calc(100% - 106px);
+  max-width: 1160px;
   margin: 0 auto;
   margin-top: 120px;
   margin-bottom: 130px;
@@ -77,6 +78,7 @@
 .contacts__data {
   width: 500px;
   padding-top: 59px;
+  margin-left: 100px;
 }
 
 @media (max-width: $tablet-width) {
@@ -103,6 +105,7 @@
 
   .contacts__data {
     width: 325px;
+    margin-left: 20px;
     padding-top: 60px;
   }
 
@@ -138,16 +141,18 @@
   }
 
   .contacts__wrap {
-    max-width: 290px;
-    margin-top: 0;
+    max-width: calc(100% - 30px);
+    width: 290px;
+    margin: 0 auto;
     margin-bottom: 70px;
     flex-direction: column;
   }
 
   .contacts__data {
     width: 290px;
+    margin-left: 0;
     margin-bottom: 30px;
-    padding-top: 47px;
+    padding-top: 55px;
     order: 1;
   }
 

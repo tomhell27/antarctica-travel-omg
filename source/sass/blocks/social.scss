@@ -1,8 +1,13 @@
 .social {
-  width: 115px;
+  min-width: 150px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   padding-left: 0;
+}
+
+.social__item {
+  margin-left: 30px;
+  margin-bottom: 5px;
 }
 
 .social__icon {
@@ -13,12 +18,17 @@
 
 @media (max-width: $tablet-width) {
   .social {
-    width: 90px;
+    width: 140px;
+    justify-content: right;
   }
 
   .social__icon {
     width: 15px;
     height: 15px;
+  }
+
+  .social__item {
+    margin-left: 20px;
   }
 }
 
@@ -26,5 +36,11 @@
   .social {
     margin: 0;
     padding: 0;
+    justify-content: left;
+  }
+
+  .social__item {
+    margin-left: 0;
+    margin-right: 20px;
   }
 }

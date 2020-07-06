@@ -16,6 +16,7 @@
   width: 590px;
   padding-left: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 40px;
 }
@@ -27,6 +28,7 @@
 }
 
 .footer__a {
+  margin-bottom: 5px;
   color: $color-font--main;
 }
 
@@ -47,7 +49,7 @@
   }
 
   .footer__wrap {
-    width: calc(100% - 90px);
+    width: calc(100% - 100px);
   }
 }
 
