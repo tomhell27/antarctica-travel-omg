@@ -25,7 +25,8 @@
 
 .reservation__wrap {
   display: flex;
-  max-width: calc(100% - 326px);
+  width: calc(100% - 50px);
+  max-width: 1040px;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -152,6 +153,7 @@
   }
 
   .reservation h2 {
+    text-align: center;
     margin-top: 7px;
     margin-bottom: 5px;
     font-weight: bold;
@@ -169,13 +171,13 @@
   }
 
   .reservation__form {
-    padding-top: 0;
+    padding-top: 45px;
     margin-top: 30px;
     align-self: center;
   }
 
   .reservation__form legend {
-    margin-top: 45px;
+    margin-top: 0;
   }
 
   .reservation__form input {
